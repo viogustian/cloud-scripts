@@ -72,6 +72,7 @@ runcmd:
   - wget --directory-prefix=/usr/bin/ -O /usr/bin/meilisearch https://github.com/meilisearch/MeiliSearch/releases/download/v0.19.0/meilisearch-linux-amd64
   - chmod 755 /usr/bin/meilisearch
   - systemctl enable meilisearch.service
+  - apt install -y nginx
   - ufw --force enable
   - ufw allow 'Nginx Full'
   - ufw allow 'OpenSSH'
