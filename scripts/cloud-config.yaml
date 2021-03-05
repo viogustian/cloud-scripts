@@ -24,7 +24,7 @@ packages:
   - make
   - nginx
   - certbot
-  - python-certbot-nginx
+  - python3-certbot-nginx
 
 write_files:
   - path: /etc/systemd/system/meilisearch.service
